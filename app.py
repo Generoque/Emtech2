@@ -33,7 +33,7 @@ def main():
     file = st.file_uploader("Upload an imgae of a cat or dog", type=["jpg", "png", "jpeg"])
 
     if file is None:
-        st.text("Please upload an image file")
+        st.text("Upload an image file")
     else:
         image = Image.open(file)
         st.image(image, use_column_width=True)
